@@ -4,7 +4,7 @@ const aboutSections = [
   {
     title: "About Me",
     body:
-      "I am Frenz, a software engineer focused on building useful software, AI tools, and embedded systems. I like work that connects clean interfaces with real technical depth.",
+      "I am Frenz, a compputer engineer focused on building useful software, AI tools, and embedded systems. I like work that connects clean interfaces with real technical depth.",
   },
   {
     title: "About My Projects",
