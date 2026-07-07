@@ -57,8 +57,8 @@ export default function ProjectSlider({ projects }) {
           >
             <div className="relative min-h-[220px] border-b border-white/10 lg:min-h-full lg:border-b-0 lg:border-r">
               <Image
-                src="/hero-engineering.png"
-                alt=""
+                src={project.cover || "/hero-engineering.png"}
+                alt={`${project.title} preview`}
                 fill
                 sizes="(min-width: 1024px) 56vw, 100vw"
                 className="object-cover"

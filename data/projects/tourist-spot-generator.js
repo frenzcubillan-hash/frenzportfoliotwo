@@ -21,7 +21,7 @@ const project = {
 
   live: "https://touristspotgenerator-tau.vercel.app/",
 
-  cover: "",
+  cover: "/projects/tourist-spot-generator/preview.png",
 
   gallery: [],
 

@@ -21,7 +21,7 @@ const project = {
 
   live: "https://pantry-chef-lake.vercel.app/",
 
-  cover: "",
+  cover: "/projects/pantry-chef/preview.png",
 
   gallery: [],
 

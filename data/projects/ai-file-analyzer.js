@@ -27,7 +27,7 @@ const project = {
 
   live: "",
 
-  cover: "/projects/file-analyzer/cover.jpg",
+  cover: "",
 
   gallery: [],
 

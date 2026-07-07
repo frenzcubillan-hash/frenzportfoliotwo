@@ -21,7 +21,7 @@ const project = {
 
   live: "",
 
-  cover: "/projects/local-llm/cover.jpg",
+  cover: "",
 
   gallery: [],
 

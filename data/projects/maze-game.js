@@ -27,7 +27,7 @@ const project = {
 
   live: "https://maze-game-biab.vercel.app/",
 
-  cover: "/projects/maze/cover.jpg",
+  cover: "/projects/maze-game/preview.png",
 
   gallery: [
     "/projects/maze/1.jpg",
