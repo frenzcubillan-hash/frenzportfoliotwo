@@ -1,11 +1,11 @@
 const profile = {
 
-    name:"Frenz Cubillan",
+    name:"Frenz Edmund Rodolf Cubillan",
 
-    role:"Software Engineer",
+    role:"Computer Engineer",
 
     intro:
-        "I build software, AI tools and embedded systems that bridge modern web development with hardware.",
+        "I make software, AI tools and embedded systems that bridge modern web development with hardware.",
 
     email:"frenzcubillan@gmail.com",
 
