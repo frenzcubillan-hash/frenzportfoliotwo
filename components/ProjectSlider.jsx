@@ -104,7 +104,7 @@ export default function ProjectSlider({ projects }) {
                     href={`/projects/${project.slug}`}
                     className="inline-flex h-12 items-center rounded-full border border-white/30 px-7 text-sm font-semibold text-white transition hover:border-white hover:bg-white hover:text-black"
                   >
-                    View Case Study
+                    View Project
                   </Link>
 
                   {project.github && (
