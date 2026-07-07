@@ -4,7 +4,7 @@ import LenisProvider from "@/components/LenisProvider";
 
 export const metadata = {
   title: "Frenz Cubillan | Portfolio",
-  description: "Software Engineer Portfolio",
+  description: "Computer Engineering Portfolio",
 };
 
 export default function RootLayout({ children }) {

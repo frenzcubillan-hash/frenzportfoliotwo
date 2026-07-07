@@ -2,7 +2,7 @@ const profile = {
 
     name:"Frenz Cubillan",
 
-    role:"Computer Engineer",
+    role:"Computer Engineering",
 
     intro:
         "I make software, AI tools and embedded systems that bridge modern web development with hardware.",

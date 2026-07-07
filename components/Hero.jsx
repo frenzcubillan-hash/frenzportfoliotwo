@@ -22,7 +22,7 @@ export default function Hero() {
 
         <div className="relative z-10 lg:-ml-36 xl:-ml-44">
           <p className="text-sm font-semibold uppercase text-zinc-400 md:text-base">
-            Software Engineer
+            Computer Engineering
           </p>
 
           <h1 className="mt-5 text-6xl font-extrabold uppercase leading-[0.9] text-white md:text-8xl">
