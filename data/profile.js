@@ -1,6 +1,6 @@
 const profile = {
 
-    name:"Frenz Edmund Rodolf Cubillan",
+    name:"Frenz Cubillan",
 
     role:"Computer Engineer",
 

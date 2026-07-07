@@ -1,6 +1,6 @@
-export default function Container({ children, wide = false }) {
+export default function Container({ children }) {
   return (
-    <div className={`mx-auto w-full px-6 md:px-10 ${wide ? "max-w-[1680px]" : "max-w-[1180px]"}`}>
+    <div className="mx-auto w-full max-w-[1520px] px-5 sm:px-6 md:px-10 xl:px-12">
       {children}
     </div>
   );

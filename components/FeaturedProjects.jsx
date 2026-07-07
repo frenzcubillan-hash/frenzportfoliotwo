@@ -19,7 +19,7 @@ export default function FeaturedProjects() {
           Projects
         </h2>
 
-        <p className="mt-8 max-w-2xl leading-8 text-zinc-400">
+        <p className="mt-6 max-w-2xl leading-8 text-zinc-400">
           A collection of systems, experiments, and applications focused on
           practical engineering, AI, and embedded development.
         </p>

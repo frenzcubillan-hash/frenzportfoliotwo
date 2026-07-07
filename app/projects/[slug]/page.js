@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import Container from "@/components/Container";
 import { getProject, projects } from "@/lib/projects";
 
@@ -127,18 +128,28 @@ function ProjectNav({ currentSlug }) {
   const next = projects[index + 1];
 
   return (
-    <section className="flex justify-between gap-6 border-t border-white/5 py-20">
+    <section className="flex flex-wrap items-center justify-between gap-6 border-t border-white/5 py-16">
       {prev ? (
-        <Link href={`/projects/${prev.slug}`} className="text-zinc-400 transition hover:text-white">
-          {"<-"} {prev.title}
+        <Link href={`/projects/${prev.slug}`} className="group inline-flex items-center gap-4 text-zinc-300 transition hover:text-white">
+          <span className="flex h-14 w-14 items-center justify-center rounded-full border border-white/20 text-zinc-100 transition group-hover:border-white group-hover:bg-white group-hover:text-black">
+            <ChevronLeft size={22} />
+          </span>
+          <span className="max-w-[220px] text-sm font-semibold">
+            {prev.title}
+          </span>
         </Link>
       ) : (
         <div />
       )}
 
       {next ? (
-        <Link href={`/projects/${next.slug}`} className="text-right text-zinc-400 transition hover:text-white">
-          {next.title} {"->"}
+        <Link href={`/projects/${next.slug}`} className="group ml-auto inline-flex items-center gap-4 text-right text-zinc-300 transition hover:text-white">
+          <span className="max-w-[220px] text-sm font-semibold">
+            {next.title}
+          </span>
+          <span className="flex h-14 w-14 items-center justify-center rounded-full border border-white/20 text-zinc-100 transition group-hover:border-white group-hover:bg-white group-hover:text-black">
+            <ChevronRight size={22} />
+          </span>
         </Link>
       ) : (
         <div />

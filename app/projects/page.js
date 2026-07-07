@@ -9,8 +9,8 @@ export const metadata = {
 export default function ProjectsPage() {
   return (
     <main className="pb-28 pt-32 md:pt-40">
-      <Container wide>
-        <div className="mb-20 max-w-3xl md:mb-28">
+      <Container>
+        <div className="mb-14 max-w-3xl md:mb-16">
           <p className="text-xs uppercase text-zinc-500">
             Portfolio
           </p>

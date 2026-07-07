@@ -20,8 +20,8 @@ export default function ProjectSlider({ projects }) {
   }
 
   return (
-    <div className="relative mt-12 md:mt-14">
-      <div className="mb-6 flex items-center justify-between gap-6">
+    <div className="relative mt-10 md:mt-12">
+      <div className="mb-5 flex items-center justify-between gap-6">
         <p className="text-sm font-semibold text-zinc-500">
           {String(index + 1).padStart(2, "0")} / {String(projects.length).padStart(2, "0")}
         </p>
@@ -53,9 +53,9 @@ export default function ProjectSlider({ projects }) {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.5 }}
-            className="grid min-h-[500px] overflow-hidden border border-white/10 bg-[#0d0d0d] shadow-[0_30px_120px_rgba(0,0,0,0.45)] lg:grid-cols-[0.58fr_0.42fr] xl:min-h-[520px]"
+            className="grid min-h-[420px] overflow-hidden border border-white/10 bg-[#0d0d0d] shadow-[0_30px_120px_rgba(0,0,0,0.45)] lg:grid-cols-[0.58fr_0.42fr] xl:min-h-[440px]"
           >
-            <div className="relative min-h-[260px] border-b border-white/10 lg:min-h-full lg:border-b-0 lg:border-r">
+            <div className="relative min-h-[220px] border-b border-white/10 lg:min-h-full lg:border-b-0 lg:border-r">
               <Image
                 src="/hero-engineering.png"
                 alt=""
@@ -69,37 +69,37 @@ export default function ProjectSlider({ projects }) {
               </div>
             </div>
 
-            <div className="flex flex-col justify-between p-7 sm:p-8 md:p-10 xl:p-12">
+            <div className="flex flex-col justify-between p-6 sm:p-7 md:p-8 xl:p-10">
               <div>
                 <div className="flex items-center justify-between text-sm font-semibold text-zinc-500">
                   <span>{project.year}</span>
                   <span>Featured Work</span>
                 </div>
 
-                <h3 className="mt-8 text-4xl font-extrabold uppercase leading-[0.95] text-white md:text-5xl xl:text-6xl">
+                <h3 className="mt-6 text-4xl font-extrabold uppercase leading-[0.95] text-white md:text-5xl xl:text-[3.35rem]">
                   {project.title}
                 </h3>
 
-                <div className="mt-7 h-px w-full bg-white/60" />
+                <div className="mt-5 h-px w-full bg-white/60" />
 
-                <p className="mt-7 text-base leading-7 text-zinc-300 md:text-lg md:leading-8">
+                <p className="mt-5 text-base leading-7 text-zinc-300 md:text-lg md:leading-7">
                   {project.description}
                 </p>
               </div>
 
-              <div className="mt-9">
-                <div className="flex flex-wrap gap-3">
+              <div className="mt-7">
+                <div className="flex flex-wrap gap-2.5">
                   {project.tech.map((t) => (
                     <span
                       key={t}
-                      className="rounded-full border border-white/15 px-3.5 py-2 text-xs font-semibold text-zinc-200"
+                      className="rounded-full border border-white/15 px-3 py-1.5 text-xs font-semibold text-zinc-200"
                     >
                       {t}
                     </span>
                   ))}
                 </div>
 
-                <div className="mt-8 flex flex-wrap gap-3">
+                <div className="mt-6 flex flex-wrap gap-3">
                   <Link
                     href={`/projects/${project.slug}`}
                     className="inline-flex h-12 items-center rounded-full border border-white/30 px-7 text-sm font-semibold text-white transition hover:border-white hover:bg-white hover:text-black"

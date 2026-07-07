@@ -27,8 +27,8 @@ export default function HomePage() {
         </Container>
       </section>
 
-      <section id="projects" className="py-20 md:py-28">
-        <Container wide>
+      <section id="projects" className="py-16 md:py-20">
+        <Container>
           <FeaturedProjects />
         </Container>
       </section>
