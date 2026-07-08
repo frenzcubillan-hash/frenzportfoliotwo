@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, ExternalLink, GitBranch } from "lucide-react";
 import Container from "@/components/Container";
 import { getProject, projects } from "@/lib/projects";
 
@@ -29,18 +29,18 @@ export default async function ProjectPage({ params }) {
   if (!project) notFound();
 
   return (
-    <main className="pb-28 pt-32 md:pt-40">
+    <main className="pb-20 pt-28 md:pb-28 md:pt-40">
       <Container>
-        <section className="pb-20">
+        <section className="pb-14 md:pb-20">
           <p className="text-sm uppercase text-zinc-500">
             {project.year} / {project.category}
           </p>
 
-          <h1 className="mt-6 max-w-5xl text-5xl font-semibold md:text-7xl">
+          <h1 className="mt-6 max-w-5xl text-4xl font-semibold leading-none text-white sm:text-5xl md:text-7xl">
             {project.title}
           </h1>
 
-          <p className="mt-8 max-w-3xl text-lg leading-8 text-zinc-400">
+          <p className="mt-7 max-w-3xl text-base leading-8 text-zinc-400 md:mt-8 md:text-lg">
             {project.description}
           </p>
 
@@ -55,15 +55,16 @@ export default async function ProjectPage({ params }) {
             ))}
           </div>
 
-          <div className="mt-10 flex flex-wrap gap-4">
+          <div className="mt-9 flex flex-wrap gap-3 md:mt-10">
             {project.github && (
               <a
                 href={project.github}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex h-12 items-center rounded-full border border-white/15 px-6 transition hover:border-white/50 hover:text-white"
+                className="inline-flex h-12 items-center gap-2 rounded-full border border-white/20 px-6 text-sm font-semibold text-zinc-100 transition hover:border-white hover:bg-white hover:text-black"
               >
-                GitHub
+                <GitBranch size={17} />
+                Repo
               </a>
             )}
 
@@ -72,8 +73,9 @@ export default async function ProjectPage({ params }) {
                 href={project.live}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex h-12 items-center rounded-full border border-white/15 px-6 transition hover:border-white/50 hover:text-white"
+                className="inline-flex h-12 items-center gap-2 rounded-full border border-white/20 px-6 text-sm font-semibold text-zinc-100 transition hover:border-white hover:bg-white hover:text-black"
               >
+                <ExternalLink size={17} />
                 Live Demo
               </a>
             )}
@@ -110,7 +112,7 @@ export default async function ProjectPage({ params }) {
 
 function ProjectSection({ title, children }) {
   return (
-    <section className="border-t border-white/5 py-20">
+    <section className="border-t border-white/5 py-14 md:py-20">
       <h2 className="mb-8 text-sm uppercase text-zinc-500">
         {title}
       </h2>
@@ -128,10 +130,10 @@ function ProjectNav({ currentSlug }) {
   const next = projects[index + 1];
 
   return (
-    <section className="flex flex-wrap items-center justify-between gap-6 border-t border-white/5 py-16">
+    <section className="flex flex-wrap items-center justify-between gap-6 border-t border-white/5 py-12 md:py-16">
       {prev ? (
         <Link href={`/projects/${prev.slug}`} className="group inline-flex items-center gap-4 text-zinc-300 transition hover:text-white">
-          <span className="flex h-14 w-14 items-center justify-center rounded-full border border-white/20 text-zinc-100 transition group-hover:border-white group-hover:bg-white group-hover:text-black">
+          <span className="flex h-12 w-12 items-center justify-center rounded-full border border-white/20 text-zinc-100 transition group-hover:border-white group-hover:bg-white group-hover:text-black sm:h-14 sm:w-14">
             <ChevronLeft size={22} />
           </span>
           <span className="max-w-[220px] text-sm font-semibold">
@@ -147,7 +149,7 @@ function ProjectNav({ currentSlug }) {
           <span className="max-w-[220px] text-sm font-semibold">
             {next.title}
           </span>
-          <span className="flex h-14 w-14 items-center justify-center rounded-full border border-white/20 text-zinc-100 transition group-hover:border-white group-hover:bg-white group-hover:text-black">
+          <span className="flex h-12 w-12 items-center justify-center rounded-full border border-white/20 text-zinc-100 transition group-hover:border-white group-hover:bg-white group-hover:text-black sm:h-14 sm:w-14">
             <ChevronRight size={22} />
           </span>
         </Link>

@@ -5,17 +5,17 @@ const project = {
 
   year: "2025",
 
-  category: "Embedded / IoT / ESP32-CAM",
+  category: "Embedded / IoT / ML-CV",
 
   featured: true,
 
   description:
-    "An automation thesis project that used ESP32-CAM, local network access, and control logic for monitoring and disinfectant spraying.",
+    "An automation thesis project that used camera-based monitoring, local network access, and control logic for disinfectant spraying.",
 
   overview:
-    "This embedded systems project focused on automating part of the piggery cleaning process through monitoring and disinfectant spraying. It combined ESP32-CAM hardware, local network access, and control logic for a practical farm automation use case.",
+    "This embedded systems project focused on automating part of the piggery cleaning process through monitoring and disinfectant spraying. It combined camera-based sensing, local network access, and control logic for a practical farm automation use case.",
 
-  tech: ["ESP32-CAM", "IoT", "Embedded Systems", "Local Network", "Automation"],
+  tech: ["ML / CV", "IoT", "Embedded Systems", "Local Network", "Automation"],
 
   github: "",
 
